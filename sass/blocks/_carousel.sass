@@ -1,12 +1,12 @@
 .carousel
-    padding: 81px 0
+    padding: 81px 400px
     &__inner
         position: relative
-        width: 500px
-        margin: 0 auto
         img
-            width: 100%
-    .slick-prev, .slick-next
+            display: block
+            width: 400px
+            margin: 0 auto
+    .prev, .next
         position: absolute
         border: none
         background-color: $b_c_txt
@@ -16,7 +16,21 @@
         img
             width: 31px
             height: 50px
-    .slick-next
+    // [data-controla=prev], .slick-next
+    //     position: absolute
+    //     border: none
+    //     background-color: $b_c_txt
+    //     top: 50%
+    //     transform: translateY(-50%)
+    //     left: -66px
+    //     img
+    //         width: 31px
+    //         height: 50px
+    .next
         right: -66px
         left: auto
+    .tns-items
+        img
+            display: block
+            margin: 0 auto
         

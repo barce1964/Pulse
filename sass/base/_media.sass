@@ -2,22 +2,16 @@
     .container
         max-width: 800px
     .promo
-        background: url('../../img/bg/bg_main.jpg') 45% top / 170% no-repeat
+        background: url('../img/bg/bg_main.jpg') 45% top / 170% no-repeat
     .advantage
         &__icons
             width: 780px
     .carousel
-        padding: 77px 0
-        &__inner
-            width: 480px
-        .slick-prev, .slick-next
-            left: -60px
-            img
-                width: 31px
-                height: 50px
-        .slick-next
-            right: -60px
-            left: auto
+        padding: 77px 300px
+        // &__inner
+        //     width: 480px
+        .prev, .next
+            display: none
 
 @media ( max-width: 991px )
     .container
@@ -44,7 +38,7 @@
             width: 100%
             height: 50px
     .promo
-        background: url('../../img/bg/bg_main.jpg') 45% top / 170% no-repeat
+        background: url('../img/bg/bg_main.jpg') 45% top / 170% no-repeat
         &__wrapper
             margin-top: 80px
         &__header
@@ -111,9 +105,10 @@
             &:nth-child(3)
                 margin-bottom: 18px
     .carousel
-        padding: 70px 0
+        padding: 70px 200
         &__inner
-            width: 450px
+            img
+                width: 380px
         
 
 
@@ -144,7 +139,7 @@
     .promo
         min-height: 500px
         padding: 15px 0 87px 0
-        background: url('../../img/bg/bg_main.jpg') 45% top / 170% no-repeat
+        background: url('../img/bg/bg_main.jpg') 45% top / 170% no-repeat
         &__wrapper
             margin-top: 70px
         &__header
@@ -213,9 +208,10 @@
             &:nth-child(3)
                 margin-bottom: 16px
     .carousel
-        padding: 60px 0
+        padding: 60px 150px
         &__inner
-            width: 400px
+            img
+                width: 350px
 
 @media ( max-width: 575px )
     .container
@@ -245,7 +241,7 @@
         min-height: 300px
         max-height: 420px
         padding: 10px 0 40px 0
-        background: url('../../img/bg/bg_main.jpg') 30% top / 260% no-repeat
+        background: url('../img/bg/bg_main.jpg') 30% top / 260% no-repeat
         &__wrapper
             margin-top: 20px
         &__header
@@ -317,6 +313,7 @@
             &:nth-child(3)
                 margin-bottom: 14px
     .carousel
-        padding: 50px 0
+        padding: 50px 50px
         &__inner
-            width: 300px
+            img
+                width: 200px
