@@ -87,6 +87,8 @@ $(document).ready(function(){
 
     $('input[name=phone]').mask("+7 (999) 999-99-99");
 
+// Mail
+
     $('form').submit(function(e) {
         e.preventDefault();
         $.ajax({
@@ -102,4 +104,24 @@ $(document).ready(function(){
         });
         return false;
     });
+
+// Smooth scroll and page up
+    $(window).scroll(function() {
+        if ($(this).scrollTop() > 1200) {
+            $('.pageup').fadeIn();
+        } else {
+            $('.pageup').fadeOut();
+        }
+    });
+
+    $("a[href^='#up']").click(function(){
+        var _href = $(this).attr("href");
+        $("html, body").animate({
+            scrollTop: $(_href).offset().top+"px",
+            duration: 1500
+        });
+        return false;
+    });
+
+    new WOW().init();
 });
