@@ -5,7 +5,7 @@ var cleanCSS    = require('gulp-clean-css');
 var autoprefixer = require('gulp-autoprefixer');
 var rename       = require("gulp-rename");
 var imagemin = require('gulp-imagemin');
-const htmlmin = require('gulp-htmlmin');
+var htmlmin = require('gulp-htmlmin');
 
 gulp.task('server', function() {
 
@@ -20,8 +20,6 @@ gulp.task('server', function() {
 
 gulp.task('styles', function() {
     return gulp.src('src/sass/**/*.+(scss|sass)')
-    // return gulp.src('sass/base/*.+(scss|sass)')
-    // return gulp.src('sass/blocks/*.+(scss|sass)')
         .pipe(sass({outputStyle: 'compressed'}).on('error', sass.logError))
         .pipe(rename({suffix: '.min', prefix: ''}))
         .pipe(autoprefixer())
